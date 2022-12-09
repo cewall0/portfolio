@@ -1,0 +1,323 @@
+<!-- Chad Bio Assignment
+    doctype specifies which version of html -->
+<!-- html defaults to html5 -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head is metadata about the document -->
+
+    <head>
+        <title>Chad Wallace Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <!-- Add favicon of green thumb -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+        <link rel="manifest" href="images/site.webmanifest" />
+    </head>
+
+    <body>
+        <header>
+            <!-- header -->
+            <div class="headerOverlay">
+                <h1>Dr. Chad Wallace</h1>
+                <h2>Dean of Science & Engineering</h2>
+                <h2>Anderson University</h2>
+                <button class="button" type="button" id="scrollButton" onclick="scrollToAbout()">
+                    Continue <i class="material-icons" id="scrollButtonIcon">arrow_forward</i>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="" id="navbar">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#aboutAnchor">About Me</a></li>
+                        <li><a href="#projectAnchor">Projects</a></li>
+                        <li><a href="#contactAnchor">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section id="about">
+                <!-- Page anchor to allow navigation to about section (accounting for fixed navbar) -->
+                <a id="aboutAnchor"></a>
+                <h2 class="sectionTitle">About me</h2>
+                <div class="imageAndDesc">
+                    <div class="profileImage" id="profilePic">
+                        <img id="profileImageAnchor" src="images/Timeline.jpeg" alt="Career timeline Photo" />
+                    </div>
+                    <p id="aboutDesc">
+                        I serve as Dean of the School of Science & Engineering at Anderson University and am a Professor
+                        of Chemistry. I am a proven leader and problem solver who is ready for my next challenge. I am
+                        love tehnology and have been prepping for a career change into the tech sector.
+                        <br /><br />
+                        <a class="webSite" target="_blank" href="https://anderson.edu/staff/dr-chad-e-wallace/"
+                            >University faculty website</a
+                        >
+                    </p>
+                </div>
+
+                <section class="courseAndSkills">
+                    <section class="courseDetails">
+                        <!-- My experience -->
+                        <h2>Experience</h2>
+                        <br /><br />
+                        <p>
+                            To better understand the Computer Science department, I began to audit a few of their
+                            courses. I have become enamored with the field. I have audited several CS classs. I've
+                            learned C#, Intro to Data Science including Pandas libraries, and most recently, a web
+                            applications course where I have learned the fundamentals of HTML, CSS, Javascript, React,
+                            Axios, and Material-UI.
+                        </p>
+                        <br /><br />
+                        <p>
+                            In addition to the university courses I have audited, I have independently learned some
+                            Python, C#, C++, Javascript, SwiftUI through codecademy.com. I have expanded my knowledge of
+                            CSS and HTML through Udemy courses. I've even recently published my first iOS app!
+                        </p>
+                        <br /><br />
+                        <p></p>
+                    </section>
+                    <section class="skillsContainer" id="skillsAnchor">
+                        <section class="skillSet" id="skillSet">
+                            <div id="html">HTML</div>
+                            <div id="css">CSS</div>
+                            <div id="C">C#</div>
+                            <div id="swift">SwiftUI</div>
+                            <div id="javascript">JavaScript</div>
+                            <div id="cplusplus">C++</div>
+                            <div id="react">React</div>
+                            <div id="axios">Axios</div>
+                            <div id="git">Git</div>
+                            <div id="python">Python</div>
+                            <div id="pandas">pandas</div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section id="projects">
+                <!-- Page anchor to allow navigation to projects section (accounting for fixed navbar) -->
+                <a id="projectAnchor"></a>
+                <h2 class="sectionTitle">Projects</h2>
+                <div class="projectsContainer" id="projectsVisible">
+                    <div class="project">
+                        <div class="projectOverlay">
+                            <span class="projectName">Gradebook</span>
+                            <span class="techUsed">HTML / CSS / JavaScript</span>
+                            <span class="projectButton viewSite"
+                                ><a target="_blank" href="https://classgrades.netlify.app/">View site</a></span
+                            >
+                            <span class="projectButton viewCode"
+                                ><a target="_blank" href="https://bitbucket.org/cewall0/portfolio/src/main/Gradebook/"
+                                    >View code</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projectOverlay">
+                            <span class="projectName">Pokemon API App</span>
+                            <span class="techUsed">React / Axios / Material-UI</span>
+                            <span class="projectButton viewSite"
+                                ><a target="_blank" href="https://pokemonapiapp.netlify.app/">View site</a></span
+                            >
+                            <span class="projectButton viewCode"
+                                ><a
+                                    target="_blank"
+                                    href="https://bitbucket.org/cewall0/portfolio/src/main/Pokemon%20App/"
+                                    >View code</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div id="bballer" class="projectOverlay">
+                            <span class="projectName">My BBaller Stats iOS app</span>
+                            <span class="techUsed">SwiftUI / Xcode</span>
+                            <span class="projectButton viewSite"
+                                ><a target="_blank" href="https://www.youtube.com/shorts/dSXdJi01cp8"
+                                    >View video of app</a
+                                ></span
+                            >
+                            <span class="projectButton viewCode"
+                                ><a target="_blank" href="https://github.com/cewall0/BBallStats">View code</a></span
+                            >
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div id="organicACS" class="projectOverlay">
+                            <span class="projectName">Organic ACS Exam grading script</span>
+                            <span class="techUsed">Python / terminal / VS Code</span>
+                            <span class="projectButton viewSite"
+                                ><a target="_blank" href="https://www.youtube.com/watch?v=-p4IPMSDZbU&feature=youtu.be"
+                                    >View video of script</a
+                                ></span
+                            >
+                            <span class="projectButton viewCode"
+                                ><a target="_blank" href="https://github.com/cewall0/OrganicACSScript"
+                                    >View code</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div id="sticks" class="projectOverlay">
+                            <span class="projectName">Sticks Game</span>
+                            <span class="techUsed">C# / OOP / AI</span>
+                            <span class="projectButton viewCode"
+                                ><a target="_blank" href="https://bitbucket.org/cewall0/portfolio/src/main/SticksGame/"
+                                    >View code</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div id="cbc" class="projectOverlay">
+                            <span class="projectName">CBCanderson.com</span>
+                            <span class="techUsed">Volunteer Website (No longer depoloyed)</span>
+                            <span class="projectButton viewSite"
+                                ><a target="_blank" href="https://cewallace7.wixsite.com/calvarybaptist"
+                                    >View site</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div id="cave" class="projectOverlay">
+                            <span class="projectName">Colossal Cave Game</span>
+                            <span class="techUsed">C# / OOP</span>
+                            <span class="projectButton viewSite"
+                                ><a target="_blank" href="https://www.youtube.com/watch?v=q7wYZRcpaq4"
+                                    >View video on game being played</a
+                                ></span
+                            >
+                            <span class="projectButton viewCode"
+                                ><a
+                                    target="_blank"
+                                    href="https://bitbucket.org/cewall0/portfolio/src/main/ColossalCaveAdventure/"
+                                    >View code</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div id="ocme" class="projectOverlay">
+                            <span class="projectName">wallaceorganic.com</span>
+                            <span class="techUsed">My textbook website</span>
+                            <span class="projectButton viewSite"
+                                ><a target="_blank" href="https://wallaceorganic.com/">View site</a></span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div id="pres" class="projectOverlay">
+                            <span class="projectName">2020 Presidential Election</span>
+                            <span class="techUsed">Python / pandas / Jupyter Notebook</span>
+                            <span class="projectButton viewCode"
+                                ><a
+                                    target="_blank"
+                                    href="https://github.com/cewall0/Data-Science-Jupyter-Notebooks/blob/main/CWallace%20Jupyter%20Notebooks/PresidentElectionPredictor2020/Wallace_Presidential_Election.ipynb"
+                                    >View code</a
+                                ></span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+                    <path d="M0 0 L50 90 L100 0 V100 H0" fill="#363C60" />
+                </svg>
+            </section>
+            <section id="contact">
+                <!-- Page anchor to allow navigation to contact section (accounting for fixed navbar) -->
+                <a id="contactAnchor"></a>
+                <h2 class="sectionTitle">Contact me</h2>
+                <div class="linksContainer">
+                    <div class="linkBox">
+                        <a href="mailto:cewall0@gmail.com" target="_blank">
+                            <svg
+                                class="icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                id="Capa_1"
+                                enable-background="new 0 0 479.058 479.058"
+                                height="512"
+                                viewBox="0 0 479.058 479.058"
+                                width="512"
+                            >
+                                <path
+                                    d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                                />
+                            </svg>
+                        </a>
+
+                        <a href="mailto:cewallace@anderson.edu" target="_blank">cewall0@gmail.com</a>
+                    </div>
+
+                    <div class="linkBox">
+                        <a href="https://github.com/cewall0" target="_blank">
+                            <img src="images/github icon.png" id="giticon" />
+                        </a>
+                        Github
+                    </div>
+
+                    <div class="linkBox">
+                        <a href="https://www.linkedin.com/in/chadwallacephd/" target="_blank"
+                            ><svg
+                                class="icon"
+                                height="512pt"
+                                viewBox="0 0 512 512"
+                                width="512pt"
+                                id="linkedinIcon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                id="fi_1419518"
+                            >
+                                <path
+                                    d="m151 181h-60c-8.285156 0-15 6.714844-15 15v240c0 8.285156 6.714844 15 15 15h60c8.285156 0 15-6.714844 15-15v-240c0-8.285156-6.714844-15-15-15zm-15 240h-30v-210h30zm0 0"
+                                ></path>
+                                <path
+                                    d="m121 61c-24.8125 0-45 20.1875-45 45s20.1875 45 45 45 45-20.1875 45-45-20.1875-45-45-45zm0 60c-8.269531 0-15-6.730469-15-15s6.730469-15 15-15 15 6.730469 15 15-6.730469 15-15 15zm0 0"
+                                ></path>
+                                <path
+                                    d="m355.640625 181.925781c-24.507813-3.976562-49.59375.6875-69.738281 12.339844-.863282-7.46875-7.207032-13.265625-14.902344-13.265625h-60c-8.285156 0-15 6.714844-15 15v240c0 8.285156 6.714844 15 15 15h60c8.285156 0 15-6.714844 15-15v-135c0-16.542969 13.457031-30 30-30s30 13.457031 30 30v135c0 8.285156 6.714844 15 15 15h60c8.285156 0 15-6.714844 15-15v-161.460938c0-44.796874-31.660156-84.710937-80.359375-92.613281zm50.359375 239.074219h-30v-120c0-33.085938-26.914062-60-60-60s-60 26.914062-60 60v120h-30v-210h30v15c0 6.066406 3.65625 11.535156 9.261719 13.859375 5.601562 2.320313 12.054687 1.035156 16.34375-3.253906l6.996093-6.996094c14.726563-14.722656 39.15625-21.816406 62.234376-18.070313 35.308593 5.730469 55.164062 33.945313 55.164062 63zm0 0"
+                                ></path>
+                                <path
+                                    d="m436 0h-360c-41.484375 0-76 34.542969-76 76v360c0 41.484375 34.542969 76 76 76h360c41.484375 0 76-34.542969 76-76v-360c0-41.484375-34.542969-76-76-76zm46 436c0 24.933594-21.066406 46-46 46h-360c-24.933594 0-46-21.066406-46-46v-360c0-24.933594 21.066406-46 46-46h360c24.933594 0 46 21.066406 46 46zm0 0"
+                                ></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chadwallacephd/" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+            <section id="footer">
+                <nav id="footerNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#aboutAnchor">About Me</a></li>
+                        <li><a href="#projectAnchor">Projects</a></li>
+                        <li><a href="#contactAnchor">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- icons -->
+                <div>
+                    Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                crossorigin="anonymous"
+            ></script>
+            <script src="script.js"></script>
+        </footer>
+    </body>
+</html>
